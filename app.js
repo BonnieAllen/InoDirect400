@@ -41,5 +41,4 @@ var HomePage = React.createClass({
 
 React.render(
     <HomePage />,
-    document.body
 );
