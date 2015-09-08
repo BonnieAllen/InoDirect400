@@ -1,13 +1,34 @@
-/**
- *
- * This directive is necessary to enable preprocessing of JSX tags:
- * @jsx React.DOM
- */
+
 
 var SearchBar = React.createClass({
     render: function () {
         return (
             <input type="search" />
+        );
+    }
+});
+
+var StaffList = React.createClass({
+    render: function () {
+        return (
+            <ul>
+                <li>Apple Moses</li>
+                <li>Wally Beaver</li>
+                <li>Ward Cleaver</li>
+                <li>Betty Hampton</li>
+            </ul>
+        );
+    }
+});
+
+var HomePage = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <Header text="Staff Directory"/>
+                <SearchBar />
+                <StaffList />
+            </div>
         );
     }
 });
