@@ -1,10 +1,10 @@
 var Header = React.createClass({
+    templateName: "Header"
     render: function () {
-        return (
-            <h1 className="title">InoDirect</h1>
-        );
+        return <div className="title">InoDirect</h1>;
     }
 });
+
 
 var SearchBar = React.createClass({
     render: function () {
